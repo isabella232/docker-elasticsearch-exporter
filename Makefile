@@ -1,4 +1,4 @@
-IMAGE := discourse/elasticsearch-exporter
+IMAGE := 107025123061.dkr.ecr.us-west-1.amazonaws.com/elasticsearch-exporter
 TAG := $(shell date -u +%Y%m%d.%H%M%S)
 
 .PHONY: default
