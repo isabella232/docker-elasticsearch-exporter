@@ -7,5 +7,5 @@ RUN git clone https://github.com/prometheus-community/elasticsearch_exporter /go
 
 FROM prom/busybox:latest
 COPY --from=builder /go/src/github.com/prometheus-community/elasticsearch_exporter/elasticsearch_exporter /bin/elasticsearch_exporter
-EXPOSE 9108
+EXPOSE 9114
 ENTRYPOINT [ "/bin/elasticsearch_exporter" ]
